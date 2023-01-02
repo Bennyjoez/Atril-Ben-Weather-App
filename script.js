@@ -1,10 +1,11 @@
-const dataArr = [];
+let dataArr = [];
 const suggestionsBox = document.querySelector("#suggestions")
 const input = document.querySelector("#input")
 const searchBtn = document.querySelector(".btn")
 
-searchBtn.addEventListener("click", respond)
-input.addEventListener("keypress", respond)
+searchBtn.addEventListener("click", fetchCityData)
+input.addEventListener("keypress", update)
+
 
 const options = {
 	method: 'GET',
@@ -14,31 +15,34 @@ const options = {
 	}
 };
 
+function update(e) {
+    if(e.key == "Enter") {
+        fetchCityData(e)
+    }
+}
 
-function respond()  {
-    suggestionsBox.innerHTML = ""
-    const searched = input.value.toLowerCase()
-
-    fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${searched}`, options)
-        .then(response => response.json())
-        .then(response => {
-            if(response.data) {
-                return response.data.map(loc => {
-                    let {city, country, latitude, longitude} = loc
-                    dataArr.push({city, country, latitude, longitude})
-                })
-            }
+async function fetchCityData(e) {
+    e.preventDefault()
+    if(input.value != "") {
+        const searched = input.value.toLowerCase()
+        const response = await fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${searched}`, options)
+        const json = await response.json()
+        json.data.map(loc => {
+            let {city, country, latitude, longitude} = loc;
+            dataArr.push({city, country, latitude, longitude})
         })
-        .catch(err => console.error(err));
 
         if(dataArr.length > 0) {
             suggestions(dataArr)
+            dataArr = []
         }
+    }
 }
 
 
 
 function suggestions(dataArr) {
+    suggestionsBox.innerHTML = ""
     dataArr.map(city => {
         const suggestion = document.createElement("div")
         suggestion.textContent += `${city.city}, ${city.country}`
