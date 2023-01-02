@@ -4,6 +4,17 @@ const suggestionsBox = document.querySelector("#suggestions")
 const input = document.querySelector("#input")
 const searchBtn = document.querySelector(".btn")
 
+const citySearched = document.querySelector('.city-searched');
+const weatherStatus = document.querySelector(".weather-status")
+const temperature = document.querySelector('.temperature')
+console.log(temperature);
+
+
+
+
+
+
+
 searchBtn.addEventListener("click", fetchCityData)
 input.addEventListener("keypress", update)
 
@@ -81,4 +92,12 @@ async function getWeather({latitude, longitude}) {
         main,
         sys
     }
+
+    if(outputDisplay.name) {
+        updateDisplay()
+    }
+}
+
+function updateDisplay() {
+    
 }
