@@ -98,5 +98,7 @@ async function getWeather({latitude, longitude}) {
 }
 
 function updateDisplay({name,weather,wind,main,sys}) {
-    citySearched.innerHTML = name.toUpperCase()
+    citySearched.textContent = name.toUpperCase()
+    weatherStatus.textContent = weather[0].main
+    image["src"] = `./icons/` + weather[0].icon + ".png"
 }
