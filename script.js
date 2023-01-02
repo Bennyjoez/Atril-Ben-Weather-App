@@ -15,7 +15,7 @@ const options = {
 function respond()  {
     const searched = input.value.toLowerCase()
 
-    const data = fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities&namePrefix=${searched}`, options)
+    const data = fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${searched}`, options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
