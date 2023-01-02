@@ -4,6 +4,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+:root {
+    --default-height: 40px
+}
 body {
     background: #54a5e7;
     width: 100%;
@@ -33,12 +36,13 @@ h1 {
 }
 .data {
     position: relative;
-    border: 1px solid red;
     width: fit-content;
     margin: auto;
+    display: flex;
 }
 #input {
     width: 50vw;
+    height: var(--default-height);
     padding: 14px 12px;
     border-radius: 5px;
     outline:none;
@@ -48,7 +52,7 @@ h1 {
 }
 .btn {
     background: #54a5e7;
-    padding: 16px 15px;
+    padding: 0px 15px;
     margin-left: -10px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -57,6 +61,7 @@ h1 {
     color: #f9f9f9;
     font-weight: 600;
     cursor: pointer;
+    height: var(--default-height);
 }
 
 /* ben css */
@@ -80,6 +85,7 @@ h1 {
 #suggestions{
     text-align: start;
     position: absolute;
+    top: var(--default-height);
     background-color: aliceblue;
     width: 50vw;
     margin: auto;
