@@ -7,7 +7,6 @@ const searchBtn = document.querySelector(".btn")
 const citySearched = document.querySelector('.city-searched');
 const weatherStatus = document.querySelector(".weather-status")
 const temperature = document.querySelector('.temperature')
-console.log(temperature);
 
 
 
@@ -72,7 +71,6 @@ function suggestions(dataArr) {
 
         outputDisplay.latitude = latitude;
         outputDisplay.longitude = longitude;
-        console.log(outputDisplay)
         getWeather(outputDisplay)
     }
 }
@@ -94,10 +92,13 @@ async function getWeather({latitude, longitude}) {
     }
 
     if(outputDisplay.name) {
-        updateDisplay()
+        updateDisplay(outputDisplay)
+        console.log(outputDisplay)
     }
 }
 
-function updateDisplay() {
-    
+function updateDisplay({name,weather,wind,main,sys}) {
+    citySearched.innerHTML = name.toUpperCase()
+
+
 }
