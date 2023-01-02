@@ -1,5 +1,5 @@
 let dataArr = [];
-const outputDisplay = {};
+let outputDisplay = {};
 const suggestionsBox = document.querySelector("#suggestions")
 const input = document.querySelector("#input")
 const searchBtn = document.querySelector(".btn")
@@ -60,11 +60,25 @@ function suggestions(dataArr) {
         const longitude = e.target.value.split(" ")[1]
 
         outputDisplay.latitude = latitude;
-        outputDisplay.longitude = longitude
+        outputDisplay.longitude = longitude;
         console.log(outputDisplay)
+        getWeather(outputDisplay)
     }
 }
 
-function getWeather() {
+async function getWeather({latitude, longitude}) {
+    const key = "fb2362ceeb96e21d536c54406253b2ec"
 
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`)
+    const response = await res.json()
+
+    const {name, weather, wind, main, sys} = response
+    
+    outputDisplay = {
+        name,
+        weather,
+        wind,
+        main,
+        sys
+    }
 }
