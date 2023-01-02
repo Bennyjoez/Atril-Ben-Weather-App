@@ -1,4 +1,6 @@
+require('dotenv').config()
 let dataArr = [];
+const outputDisplay = {};
 const suggestionsBox = document.querySelector("#suggestions")
 const input = document.querySelector("#input")
 const searchBtn = document.querySelector(".btn")
@@ -55,5 +57,15 @@ function suggestions(dataArr) {
     function setSearch(e) {
         input.value = e.target.textContent
         suggestionsBox.innerHTML = ""
+        const latitude = e.target.value.split(" ")[0]
+        const longitude = e.target.value.split(" ")[1]
+
+        outputDisplay.latitude = latitude;
+        outputDisplay.longitude = longitude
+        console.log(outputDisplay)
     }
+}
+
+function getWeather() {
+
 }
