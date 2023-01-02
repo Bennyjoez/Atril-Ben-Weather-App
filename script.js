@@ -7,6 +7,7 @@ const searchBtn = document.querySelector(".btn")
 const citySearched = document.querySelector('.city-searched');
 const weatherStatus = document.querySelector(".weather-status")
 const temperature = document.querySelector('.temperature')
+const image = document.querySelector('.image-icon')
 
 
 
