@@ -52,3 +52,19 @@ h1 {
     font-weight: 600;
     cursor: pointer;
 }
+
+/* ben css */
+.weather-predictions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.weather-predictions > * {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.weather-predictions > *:nth-child(odd) {
+    background-color: gainsboro;
+}
