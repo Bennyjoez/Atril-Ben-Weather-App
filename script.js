@@ -93,12 +93,9 @@ async function getWeather({latitude, longitude}) {
 
     if(outputDisplay.name) {
         updateDisplay(outputDisplay)
-        console.log(outputDisplay)
     }
 }
 
 function updateDisplay({name,weather,wind,main,sys}) {
     citySearched.innerHTML = name.toUpperCase()
-
-
 }
