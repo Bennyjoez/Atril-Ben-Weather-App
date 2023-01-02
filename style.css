@@ -2,11 +2,11 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 body {
     background: #54a5e7;
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
