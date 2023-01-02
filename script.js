@@ -1,4 +1,3 @@
-require('dotenv').config()
 let dataArr = [];
 const outputDisplay = {};
 const suggestionsBox = document.querySelector("#suggestions")
