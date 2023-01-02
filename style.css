@@ -15,7 +15,7 @@ body {
 .full_box {
     background: #f9f9f9;
     width: 85%;
-    height: 400px;
+    height: auto;
     padding: 30px 30px;
     border-radius: 10px;
     box-shadow: -22px -2px 95px 9px rgba(0,0,0,0.12);
@@ -63,6 +63,7 @@ h1 {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     gap: 10px;
 }
 .weather-predictions > *:nth-child(odd) {
