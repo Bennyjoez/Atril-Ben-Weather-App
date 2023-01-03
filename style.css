@@ -23,8 +23,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .full_box {
-   /* background: #f9f9f9; */
-   backdrop-filter: blur(30px);
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
     width: 85%;
     height: auto;
     padding: 30px 30px;
