@@ -1,4 +1,5 @@
 let dataArr = [];
+let coord = {}
 let outputDisplay = {};
 const suggestionsBox = document.querySelector("#suggestions")
 const input = document.querySelector("#input")
@@ -61,9 +62,9 @@ function suggestions(dataArr) {
         const latitude = e.target.value.split(" ")[0]
         const longitude = e.target.value.split(" ")[1]
 
-        outputDisplay.latitude = latitude;
-        outputDisplay.longitude = longitude;
-        getWeather(outputDisplay)
+        coord.latitude = latitude;
+        coord.longitude = longitude;
+        getWeather(coord)
     }
 }
 
