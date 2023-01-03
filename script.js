@@ -9,15 +9,8 @@ const weatherStatus = document.querySelector(".weather-status")
 const temperature = document.querySelector('.temperature')
 const image = document.querySelector('.image-icon')
 
-
-
-
-
-
-
 searchBtn.addEventListener("click", fetchCityData)
 input.addEventListener("keypress", update)
-
 
 const options = {
 	method: 'GET',
@@ -50,8 +43,6 @@ async function fetchCityData(e) {
         }
     }
 }
-
-
 
 function suggestions(dataArr) {
     suggestionsBox.innerHTML = ""
