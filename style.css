@@ -80,6 +80,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .weather-predictions > * {
     padding: 20px;
