@@ -113,7 +113,7 @@ h1 {
     cursor: pointer;
 }
 .temperature {
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Anton', sans-serif;
     font-weight: 600;
     color: rgb(15, 14, 14);
@@ -126,4 +126,8 @@ h1 {
     font-weight: 600;
     font-style: italic;
     text-transform: capitalize;
+}
+.location-details span {
+    font-weight: 600;
+    color: brown;
 }

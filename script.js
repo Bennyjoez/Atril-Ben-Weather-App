@@ -7,8 +7,12 @@ const searchBtn = document.querySelector(".btn")
 
 const citySearched = document.querySelector('.city-searched');
 const weatherStatus = document.querySelector(".weather-status")
-const temperature = document.querySelector('.temperature')
+const temperature = document.querySelector('.temp-value')
 const image = document.querySelector('.image-icon')
+const minMax = document.querySelector(".minMax")
+const humidity = document.querySelector(".humidity")
+const pressure = document.querySelector('.pressure')
+const seaLevel = document.querySelector('.sea-level')
 
 searchBtn.addEventListener("click", fetchCityData)
 input.addEventListener("keypress", update)
@@ -90,7 +94,16 @@ async function getWeather({latitude, longitude}) {
 }
 
 function updateDisplay({name,weather,wind,main,sys}) {
-    citySearched.textContent = name.toUpperCase()
-    weatherStatus.textContent = weather[0].description
-    image["src"] = `./icons/` + weather[0].icon + ".png"
+    citySearched.textContent = name.toUpperCase();
+    weatherStatus.textContent = weather[0].description ;
+    image["src"] = `./icons/` + weather[0].icon + ".png";
+    temperature.textContent = convTemp(main.temp);
+    minMax.textContent = `${convTemp(main.temp_min)}/${convTemp(main.temp_max)}`;
+    humidity.textContent = main.humidity;
+    pressure.textContent = main.pressure;
+    seaLevel.textContent = main["sea level"]
+}
+
+function convTemp(temp) {
+    return Math.round(temp - 273)
 }
