@@ -114,9 +114,13 @@ function changeBackground() {
     let weather = outputDisplay.weather[0].main
     console.log(weather)
 
-    if(weather == "clouds") {
-
-    } else if(weather == "clear") {
-        
+    if(weather == "Clouds") {
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    } else if(weather == "Clear") {
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&w=600')";
+    } else if(weather == "Mist"){
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/4215110/pexels-photo-4215110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    } else {
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
     }
 }

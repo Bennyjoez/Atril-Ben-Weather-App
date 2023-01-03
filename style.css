@@ -17,6 +17,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;
