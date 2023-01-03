@@ -90,7 +90,9 @@ async function getWeather({latitude, longitude}) {
 
     if(outputDisplay.name) {
         updateDisplay(outputDisplay)
+        changeBackground()
     }
+
 }
 
 function updateDisplay({name,weather,wind,main,sys}) {
@@ -106,4 +108,15 @@ function updateDisplay({name,weather,wind,main,sys}) {
 
 function convTemp(temp) {
     return Math.round(temp - 273)
+}
+
+function changeBackground() {
+    let weather = outputDisplay.weather[0].main
+    console.log(weather)
+
+    if(weather == "clouds") {
+
+    } else if(weather == "clear") {
+        
+    }
 }
