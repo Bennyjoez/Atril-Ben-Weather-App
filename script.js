@@ -120,7 +120,13 @@ function changeBackground() {
         document.body.style.backgroundImage = "url('https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&w=600')";
     } else if(weather == "Mist"){
         document.body.style.backgroundImage = "url('https://images.pexels.com/photos/4215110/pexels-photo-4215110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
-    } else {
-        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    } else if (weather == "Rain") {
+        document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1593981211728-41e4e796ec96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80')";
+    } else if(weather == "Fog"){
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/163323/fog-dawn-landscape-morgenstimmung-163323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    } else if(weather == "Drizzle"){
+        document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1525087740718-9e0f2c58c7ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80')";
+    } else if(weather == "Smoke"){
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/4406353/pexels-photo-4406353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
     }
 }
