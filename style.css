@@ -11,9 +11,8 @@
     --default-height: 45px
 }
 body {
-    /*background: #54a5e7; */
     background-image: url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -24,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px 0px;
+    /* margin: 70px 0px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
