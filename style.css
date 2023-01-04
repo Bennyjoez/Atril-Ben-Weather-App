@@ -150,6 +150,9 @@ h1 {
     font-weight: 600;
     color: brown;
 }
+.image-icon-prediction {
+    height: 50px;
+}
 
 @media screen and (max-width: 600px){
     :root {

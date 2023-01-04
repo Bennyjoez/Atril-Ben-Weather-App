@@ -147,6 +147,7 @@ async function predictWeather(name) {
                         <div class="weather-status">
                             ${obj.weather[0].description}
                         </div>
+                        <img src="./icons/${obj.weather[0].icon}.png" alt="" class="image-icon-prediction">
                         <div class="temperature">
                             <span class="temp-value">${convTemp(obj.main.temp)}</span>°C
                         </div>
