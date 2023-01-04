@@ -13,6 +13,7 @@ const minMax = document.querySelector(".minMax")
 const humidity = document.querySelector(".humidity")
 const pressure = document.querySelector('.pressure')
 const seaLevel = document.querySelector('.sea-level')
+const weatherPredictions = document.querySelector('.weather-predictions')
 
 searchBtn.addEventListener("click", fetchCityData)
 input.addEventListener("keypress", update)
@@ -56,11 +57,12 @@ function suggestions(dataArr) {
         suggestion.textContent += `${city.city}, ${city.country}`
         suggestion.value = `${city.latitude} ${city.longitude}`
         suggestionsBox.appendChild(suggestion)
+        suggestion.addEventListener('click', setSearch)
     })
 
-    suggestionsBox.addEventListener("click", setSearch)
 
     function setSearch(e) {
+        let cityName = e.target.textContent.split(', ')[0]
         input.value = e.target.textContent
         suggestionsBox.innerHTML = ""
         const latitude = e.target.value.split(" ")[0]
@@ -69,6 +71,10 @@ function suggestions(dataArr) {
         coord.latitude = latitude;
         coord.longitude = longitude;
         getWeather(coord)
+        
+        if(cityName) {
+            predictWeather(cityName)
+        }
     }
 }
 
@@ -96,9 +102,58 @@ async function getWeather({latitude, longitude}) {
 }
 
 async function predictWeather(name) {
+    weatherPredictions.innerHTML = ""
     const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=dd7436824d3359164bc4c6a7375b1dfc`);
     const response = await res.json()
-    console.log(response)
+    let arr = response.list
+    console.log(arr)
+
+    for(let i = 8; i < arr.length; i+=8) {
+        let day
+        const timeStamp = arr[i].dt
+        const dey = new Date(timeStamp * 1000).getDay()
+        switch(dey) {
+            case 0:
+                day = 'Sunday'
+                break;
+            case 1:
+                day = "Monday"
+                break;
+            case 2: 
+                day = "Tuesday"
+                break;
+            case 3:
+                day = "Wednesday"
+                break;
+            case 4:
+                day = "Thursday"
+                break;
+            case 5: 
+                day = "Friday"
+                break;
+            case 6: 
+                day = "Saturday"
+                break;
+        }
+        
+        predictionTile(arr[i], day)
+    }
+    
+    function predictionTile(obj, day) {
+        const tile = document.createElement('div')
+        tile.innerHTML = 
+        `<div class="weather-prediction-tile">
+                        <h1>${day}</h1>
+                        <div class="weather-status">
+                            ${obj.weather[0].description}
+                        </div>
+                        <div class="temperature">
+                            <span class="temp-value">${convTemp(obj.main.temp)}</span>°C
+                        </div>
+        </div>`
+
+        weatherPredictions.appendChild(tile)
+    }
 }
 
 
