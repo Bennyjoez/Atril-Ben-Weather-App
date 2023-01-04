@@ -99,6 +99,7 @@ h1 {
     flex-wrap: wrap;
 }
 .weather-predictions > * {
+    width: 350px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -108,6 +109,9 @@ h1 {
 }
 .weather-predictions > *:nth-child(odd) {
     background-color: #54a5e7;
+}
+.weather-predictions > *:nth-child(even) {
+    background-color: rgb(36, 101, 80);
 }
 
 /* suggestions */
