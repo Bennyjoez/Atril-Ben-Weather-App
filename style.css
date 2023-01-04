@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root {
-    --default-height: 40px
+    --default-height: 45px
 }
 body {
     /*background: #54a5e7; */
@@ -23,8 +23,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 70px 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .full_box {
     background: rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
@@ -40,6 +42,13 @@ body {
     text-align: center;
     display: block;
 
+}
+.head_ing {
+    font-family: fantasy;
+    letter-spacing: 3px;
+    color: #54a5e7;
+    pointer-events: none;
+    user-select: none;
 }
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -74,15 +83,18 @@ h1 {
     font-weight: 600;
     cursor: pointer;
     font-size: 16px;
-
     height: var(--default-height);
+    transition: all 1s;
+}
+.btn:hover {
+    background: #1871b9;
 }
 
 /* ben css */
 .weather-predictions {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
     flex-wrap: wrap;
 }
 .weather-predictions > * {
@@ -90,10 +102,11 @@ h1 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    margin-top: 30px;
     gap: 10px;
 }
 .weather-predictions > *:nth-child(odd) {
-    background-color: gainsboro;
+    background-color: #54a5e7;
 }
 
 /* suggestions */
@@ -131,4 +144,22 @@ h1 {
 .location-details span {
     font-weight: 600;
     color: brown;
+}
+
+@media screen and (max-width: 600px){
+    :root {
+        --default-height: 35px
+    }
+    h1 {
+        font-size: 17px;
+    }
+    #input {
+        width: 55vw;
+        font-size: 11px;
+        padding: 10px 11px;
+    }
+    .btn {
+        padding: 0px 10px;
+        font-size: 11px;
+    }
 }
