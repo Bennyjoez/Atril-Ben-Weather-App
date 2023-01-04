@@ -95,6 +95,18 @@ async function getWeather({latitude, longitude}) {
 
 }
 
+async function predictWeather(name) {
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=dd7436824d3359164bc4c6a7375b1dfc`);
+    const response = await res.json()
+    console.log(response)
+}
+
+
+
+
+
+
+
 function updateDisplay({name,weather,wind,main,sys}) {
     citySearched.textContent = name.toUpperCase();
     weatherStatus.textContent = weather[0].description ;
@@ -112,7 +124,6 @@ function convTemp(temp) {
 
 function changeBackground() {
     let weather = outputDisplay.weather[0].main
-    /* console.log(weather) */
 
     if(weather == "Clouds") {
         document.body.style.backgroundImage = "url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
