@@ -156,12 +156,6 @@ async function predictWeather(name) {
     }
 }
 
-
-
-
-
-
-
 function updateDisplay({name,weather,wind,main,sys}) {
     citySearched.textContent = name.toUpperCase();
     weatherStatus.textContent = weather[0].description ;
