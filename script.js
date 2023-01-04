@@ -106,7 +106,6 @@ async function predictWeather(name) {
     const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=dd7436824d3359164bc4c6a7375b1dfc`);
     const response = await res.json()
     let arr = response.list
-    console.log(arr)
 
     for(let i = 8; i < arr.length; i+=8) {
         let day
@@ -165,7 +164,7 @@ function updateDisplay({name,weather,wind,main,sys}) {
     minMax.textContent = `${convTemp(main.temp_min)}/${convTemp(main.temp_max)}`;
     humidity.textContent = main.humidity;
     pressure.textContent = main.pressure;
-    seaLevel.textContent = main["sea level"]
+    seaLevel.textContent = main["sea_level"]
 }
 
 function convTemp(temp) {
