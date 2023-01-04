@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
 * {
     padding: 0px;
@@ -44,7 +45,7 @@ body {
 
 }
 .head_ing {
-    font-family: fantasy;
+    font-family: 'Titan One', cursive;
     letter-spacing: 3px;
     color: #54a5e7;
     pointer-events: none;
