@@ -198,7 +198,6 @@ window.onload = function() {
 
     }
 function showPosition(position) {
-    console.log(position)
     const {coords} = position
     let latitude = coords.latitude;
     let longitude = coords.longitude;
