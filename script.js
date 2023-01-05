@@ -193,15 +193,18 @@ function changeBackground() {
    /////////////// GeoLocation Data of Person /////////////////////
 window.onload = function() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(showPosition);
     }
-   
+
     }
-    function showPosition(position) {
+function showPosition(position) {
+    console.log(position)
     const {coords} = position
-    let personLet = coords.latitude;
-    let perLongt = coords.longitude;
-   
+    let latitude = coords.latitude;
+    let longitude = coords.longitude;
+    const personLocale = {latitude, longitude}
+    
+    getWeather(personLocale);
 
 
-      }
+}
