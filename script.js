@@ -14,6 +14,7 @@ const humidity = document.querySelector(".humidity")
 const pressure = document.querySelector('.pressure')
 const seaLevel = document.querySelector('.sea-level')
 const weatherPredictions = document.querySelector('.weather-predictions')
+const time = document.querySelector('.time')
 
 searchBtn.addEventListener("click", fetchCityData)
 input.addEventListener("keypress", update)
@@ -85,6 +86,7 @@ async function getWeather({latitude, longitude}) {
     const response = await res.json()
 
     const {name, weather, wind, main, sys} = response
+    console.log(response)
     
     outputDisplay = {
         name,
@@ -207,3 +209,13 @@ function showPosition(position) {
 
 
 }
+
+// set time
+function setTime() {
+    let dateObj = new Date()
+    time.innerHTML = dateObj
+}
+
+setInterval(() => {
+    setTime()
+}, 1000);
