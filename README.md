@@ -1,7 +1,7 @@
 # WEATHER APP
 This is our Weather App Project.
 
-## use
+## Use
 - To use this app, the user needs to enter a search parameter(a city in the world) in the input section.
 - The user will get suggestions of the cities matching the search parameter. 
 - The user selects the suitable option and presses search or, enter or a find button
@@ -9,4 +9,7 @@ This is our Weather App Project.
 - After a succesful search, the app displays the information for the user.
 - The user can also search another city at will and the process will start again.
 
-
+# Preview
+<div align="center">
+<a href="https://atril-ben-weather-app.netlify.app/"><img src="https://lh3.googleusercontent.com/fife/AAbDypDmS4kgcea2UeCE6mCohW9x9Uu3wG-WG18eaPeFZnuvdclqJcddBJRjH64gGRiWN70g4M_0lMzWZNN01CJRWoUKpr9p1TgUVI5_iB2gDOWZaK0vRFs_8tSyfHRP_Q0C41m6mWGDNAeA2K26-7ZKaY9VnoeIg0-wlkLlH9JzwRpWnJUKyRI-xPILJNMbNFeewOChWdad3r6sXJcsC_psPhTxhYey4kFdc-02pZkRqkbK6dma40VPisRAn-EyugXyBjdngbFd5dOJjxjtfXHLWGb9G0WO9rzMdA9GkEicnpqRNTRjZzeKn0Jq2qAflc8lDNWDiVCHXqT_Th4WkhLb2KteB5Plyqc5QyBXeEp92vJBjky00Bm16IV9rV6aJj1CPIAK7_atRdm4jQQGLy-42C8jhOVAbLAsAZ-G9xu7DNEKdpzQF_E-lYZs_Ksyg-HKeNu9jqycYw9ociEbmKHCkgbWo16pkKunlGgr8RawR2qZF55AIahQkDeRRbAk_aDWdF0pb7oavpFzhi3Fa1cd40c9SZf_qDBj4gRjgIn4w9rb5NHZhAg7YGr-VsV5pGPXNBshUOXstV2TKX3xFb1tmFFh-jObnLZJpgrJrOJQG1aS2ZXoZz3ZjZbEFghNmxAE_AdmyJTRqBv6ljWYLG--1YN7LR2yWGJXZZzcdruWUUWfsrsN5LH19derQeTLFdkqCgSeOLzsTwvnnLvXG7mJIKOcdqp_870ci3oq_Ikr2bs_fXG6z9mqwqiM6cP_QCyQ-JGjrQeit8o1gE0yW4WxWakxlDh-Es3lMfmDBhdg4kT6_vnUdAzto1mjGpcUW6sObpEqVdvCWqSEawephqliraHi1I7Dg-IKrs-leMauXjancTvy5zTSUoxMjIp9VqD281xz2oLAi9NyyyYr3OA4tT8BfK7vcDe55cgs6vYBF1dV2YW_RmkKTfOB6Ryp1RkBMIlVEpTFyX8t1uPrPy-889_Z7YZ4CobyQPBSYa461PhKv84o8ySB76do1io-0LIsw2rqbOcdTXIvsLZ2iZTwUjGwdLR1u--22N7gPsQ5ZrTX0dZGBS2uSOFbLJx3hU7MpQkMArcYf4y-TzijRoD4_Xp07MZrKTHNoftAfHVrA5Wx3-0ZA0yOfZl6O3QrZ8nfOb6aZ0TzCI5Vrea8ujWnMX6uiDCWvrOcw0B5cH8eOkkQLY-kwW_YS88eemRaZuvcC5TN6MCygDmVajImzVp7ZVWOCuoj5Cw6wTBdUyEv8EYkrH3lEV0JB7xuLbVSefcepU5BexZ5I2w4eJu4OD_lFeCL1D7ABn9DeqPTyvJDrGtKfnJ8YnzmbB1T4HNG0378k3DD1m0PycXlGB5FkbLxzMVyrF-b17pQLgpsnIiH2alxUIMcL2nB7JDKKqqkqycrd5BumGkytNqxqvfclsZI4-gPGWW3ZuQPOVFKgW6acEVUHWadPZpoPAyeA6Eq5dM-C0VJREhQWe3JiyJDhIqXWA=w1366-h617" width="900px"></a>
+</div>
