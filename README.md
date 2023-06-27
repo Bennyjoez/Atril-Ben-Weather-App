@@ -4,12 +4,12 @@ This is our Weather App Project.
 ## Use
 - To use this app, the user needs to enter a search parameter(a city in the world) in the input section.
 - The user will get suggestions of the cities matching the search parameter. 
-- The user selects the suitable option and presses search or, enter or a find button
-- The app, finds the locations latitude and longitude and calls a weather api passing in the data(long & lat)
-- After a succesful search, the app displays the information for the user.
+- The user selects the suitable option and presses the search or, enter or a find button
+- The app, finds the location's latitude and longitude and calls a weather API passing in the data(long & lat)
+- After a successful search, the app displays the information for the user.
 - The user can also search another city at will and the process will start again.
 
 # Preview
 <div align="center">
-<a href="https://atril-ben-weather-app.netlify.app/"><img src="https://lh3.googleusercontent.com/fife/AMPSemdkKSmUmYHVQffpTBvpCsT0fNA6twuqOUV9fp-1PWubdQOEvYqzjNamkKSfC1gu8778hVbBJdnswWHElcoemQR3pAsgl5M-ZRqrp06rK8N1RApW1L90E0hgl64QWL9v77v3ScHapuX9TDXolTuhx8GExGiMMTTYl_GmLvxWuY0hteP7vkyZNfZdXtHJlN4Fc5g2XXHmHZNCb0mISrYBd8ZvSOdvqyE-ZtB0HTk7JIol6aktZBvHA1Px6VaontRWlek9inQ9_reVcuAKBs_s2U1X2zjF26fFAYoqocv0QXDjkLF1FzrWOvf0Vk4qA5ZbryOZI4i6Y66xKncH5BeOccSUTQR8rxlU6Ydmqom2aJUGZTmAvQOdWMOUxkdMYw8GmSARLgivPS3ZdGuA2cNDEx6FB9r5bMrxpiFBIYcqsdrc2I2n3AEKU7LOZNawFIJCUHRJ8gkdzZXgmBkEPygjOdrMowojxIN-0ySF2SbGxsjH8vMgxDRes3TEh_PMqb52PMV-mqjbXXtrQaXHnkXWX3aw-63twQ55H45gpDRiyU-oGMmnVIjdAY2Uddk3ycCW4XuICrZ7YFKloWQBadMrCDBlglda7cHttjieChP7hahWefbRs8UMWFvrywdbeWrlI9AgASyWgxnFNUwtbsFVEfmI6ewC6wFFnlp1ouZOoLKmrhFxMoJzFvGQBCaOIMW33BqgVRPqTni2qmj-AuGF02SJcNNlgIPZYRNMDf0rYWbjquQi5OHT0aXnN3HZGGzG5nCRcUF9hXqB-SOIPz3CHHXwceilqDyst8fe5mCsVETzmDnql4gngqYOLw1o88NNP9DP7M0BA9Fua97W2IjRC0YQMHSSLLagLOGxVH_rwJ4_XaGPg6EBiJoeCG18X5nGdQDXKNd9nQo6JcFNJsIMXu6f5M4U1BA2AFYKWHCxAHFTYrfJZInq77-AjqOtIUvd72Hc9Qga-UluJagfWT3HdNyjQt4WjPt8PCMDPVa6seWDeRdIIdW1nm98032uVu11TU9S5ZHRFrNKvzL5knERyfgnNuHkONbmghIRVhySb3NCXwNbaxeZZyHGrfDJzY9OKR7rsQ_Spbibx9CvC1jCqFHuzqQ-ZctueS08rMP0SqvTTjaOHLAgTeMJ7XLNK3ySW7Uy3tsO-27Rr2MGH68QXFX8qbNaSeB_VUJ-T7h2Kk4eofC_k-BdNp37YaH1cW6QJ83lfbkIs1mBCiDcirQZp5RTw3jENwh_o3rgsMofcoHUr_ebGdlZHmMCOKbTkzt5RwbJjbTzuHi1scR68lBrHikZdmfry_m9jerp4YBvRXjz5E0SzPNxPPe-6GFkfa7d0DbwIB_i36ZbgUv6oCrlS3OrBDxWTcJlB_7ZZTie1fvC_izqArhCO_Co-Ni51ZEEuLIk-NVgJCc4WQS-HfB-_g5Dh-Y3lpwDfQtwnlU2ICfzmiiKkOTOnchpZLvPn4yIU-chxV-2bylbCMOoKOIeKg=w1366-h617"></a>
+<img src="https://github.com/Bennyjoez/Atril-Ben-Weather-App/blob/main/Preview.png" width="650px">
 </div>
